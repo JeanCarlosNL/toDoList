@@ -8,4 +8,4 @@ export const pendingToDo: string[] = [
 
 export const historyToDo: string[] = [
   'History 1', 'History 2', 'History 3'
-]
+];
