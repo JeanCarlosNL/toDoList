@@ -1,0 +1,36 @@
+.history-tittle
+{
+  text-align: center;
+}
+.input-row{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-evenly;
+  align-content: space-evenly;
+}
+.head-row{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+form{
+  width: 100%;
+}
+.input-text{
+  width: 80%;
+}
+.input-button{
+ width: 10%;
+}
+.btn-atras{
+  justify-self: center;
+  align-self: center;
+}
+.tittle{
+  align-self: center;
+  justify-self: center;
+}
+
+
+
