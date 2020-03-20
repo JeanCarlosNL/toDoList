@@ -2,7 +2,7 @@
   <caption>To Do History List</caption>
   <tbody *ngFor="let toDos of toDo">
     <tr >
-      <td class="col-md-10">{{toDos}}</td>
+      <td class="col-md-10" id={{toDos}}>{{toDos}}</td>
       <td><button class="btn btn-danger" type="button" value={{toDo.indexOf(toDos)}}>X</button></td>
     </tr>
   </tbody>

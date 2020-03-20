@@ -14,8 +14,8 @@
     <form action="">
 
       <div class="input-row">
-        <input class="form-control input-text" type="text" placeholder="Add New Todo">
-        <input class="btn btn-info input-button" type="button" value="Add">
+        <input class="form-control input-text" id="toDoDescription" type="text" placeholder="Add New Todo">
+        <input (click)="push('Nuevo ToDo')" class="btn btn-info input-button" type="button" value="Add">
       </div>
       <br>
       <div>

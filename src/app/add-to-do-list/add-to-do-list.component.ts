@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { FormBuilder } from '@angular/forms';
 import { toDo } from '../toDo';
+import { pendingToDo } from '../toDo';
 
 @Component({
   selector: 'app-add-to-do-list',
@@ -9,9 +11,20 @@ import { toDo } from '../toDo';
 export class AddToDoListComponent implements OnInit {
 
   toDo = toDo;
-  constructor() { }
+  pendingToDo = pendingToDo;
+  addForm;
+  constructor( ) { 
+  }
 
   ngOnInit(): void {
   }
+
+ save(){
+   for(let i=0;i<toDo.length;i++){
+       pendingToDo.push(toDo[i]);
+   }
+   window.alert('Anadido a pendientes!');
+   this.toDo.splice(0);
+ }
 
 }
